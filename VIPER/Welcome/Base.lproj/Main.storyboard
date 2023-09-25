@@ -15,9 +15,39 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Duz-xq-crx">
+                                <rect key="frame" x="67" y="229" width="259" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="259" id="g2m-6r-dd2"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0fg-Lh-S5S">
+                                <rect key="frame" x="67" y="385" width="259" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="259" id="6Ms-4u-t16"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Duz-xq-crx" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="170" id="63O-Cm-Of9"/>
+                            <constraint firstItem="0fg-Lh-S5S" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="9pE-xS-UPy"/>
+                            <constraint firstItem="0fg-Lh-S5S" firstAttribute="top" secondItem="Duz-xq-crx" secondAttribute="bottom" constant="135" id="B9m-f3-nfN"/>
+                            <constraint firstItem="Duz-xq-crx" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="kpj-He-wnk"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="dateLabel" destination="Duz-xq-crx" id="1r8-t8-esP"/>
+                        <outlet property="weatherLabel" destination="0fg-Lh-S5S" id="T1H-Ml-LfQ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
