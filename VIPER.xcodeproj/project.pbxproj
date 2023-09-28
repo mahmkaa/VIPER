@@ -19,6 +19,12 @@
 		EA4D82E92ABC5AB2004D11BF /* WelcomeRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA4D82E82ABC5AB1004D11BF /* WelcomeRouter.swift */; };
 		EA4D82EB2ABC5B13004D11BF /* WelcomeInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA4D82EA2ABC5B13004D11BF /* WelcomeInteractor.swift */; };
 		EA4D82ED2ABC5C53004D11BF /* WelcomeModuleBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA4D82EC2ABC5C53004D11BF /* WelcomeModuleBuilder.swift */; };
+		EAA4FA422AC5BA64006BAB1B /* ImageViewerModuleBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAA4FA3D2AC5BA64006BAB1B /* ImageViewerModuleBuilder.swift */; };
+		EAA4FA432AC5BA64006BAB1B /* ImageViewerPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAA4FA3E2AC5BA64006BAB1B /* ImageViewerPresenter.swift */; };
+		EAA4FA442AC5BA64006BAB1B /* ImageViewerRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAA4FA3F2AC5BA64006BAB1B /* ImageViewerRouter.swift */; };
+		EAA4FA452AC5BA64006BAB1B /* ImageViewerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAA4FA402AC5BA64006BAB1B /* ImageViewerViewController.swift */; };
+		EAA4FA462AC5BA64006BAB1B /* ImageViewerInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAA4FA412AC5BA64006BAB1B /* ImageViewerInteractor.swift */; };
+		EAA4FA492AC5BAB3006BAB1B /* ImageViewer.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EAA4FA482AC5BAB3006BAB1B /* ImageViewer.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +42,12 @@
 		EA4D82E82ABC5AB1004D11BF /* WelcomeRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeRouter.swift; sourceTree = "<group>"; };
 		EA4D82EA2ABC5B13004D11BF /* WelcomeInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeInteractor.swift; sourceTree = "<group>"; };
 		EA4D82EC2ABC5C53004D11BF /* WelcomeModuleBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeModuleBuilder.swift; sourceTree = "<group>"; };
+		EAA4FA3D2AC5BA64006BAB1B /* ImageViewerModuleBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageViewerModuleBuilder.swift; sourceTree = "<group>"; };
+		EAA4FA3E2AC5BA64006BAB1B /* ImageViewerPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageViewerPresenter.swift; sourceTree = "<group>"; };
+		EAA4FA3F2AC5BA64006BAB1B /* ImageViewerRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageViewerRouter.swift; sourceTree = "<group>"; };
+		EAA4FA402AC5BA64006BAB1B /* ImageViewerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageViewerViewController.swift; sourceTree = "<group>"; };
+		EAA4FA412AC5BA64006BAB1B /* ImageViewerInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageViewerInteractor.swift; sourceTree = "<group>"; };
+		EAA4FA482AC5BAB3006BAB1B /* ImageViewer.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ImageViewer.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +80,7 @@
 		EA4D82C92ABC50CD004D11BF /* VIPER */ = {
 			isa = PBXGroup;
 			children = (
+				EAD10E382AC1B8D30037E64D /* ImageViewer */,
 				EA4D82E52ABC58B4004D11BF /* Welcome */,
 				EA4D82E02ABC564A004D11BF /* API */,
 				EA4D82DE2ABC54E2004D11BF /* Application */,
@@ -115,6 +128,19 @@
 				EA4D82EC2ABC5C53004D11BF /* WelcomeModuleBuilder.swift */,
 			);
 			path = Welcome;
+			sourceTree = "<group>";
+		};
+		EAD10E382AC1B8D30037E64D /* ImageViewer */ = {
+			isa = PBXGroup;
+			children = (
+				EAA4FA3D2AC5BA64006BAB1B /* ImageViewerModuleBuilder.swift */,
+				EAA4FA3E2AC5BA64006BAB1B /* ImageViewerPresenter.swift */,
+				EAA4FA3F2AC5BA64006BAB1B /* ImageViewerRouter.swift */,
+				EAA4FA402AC5BA64006BAB1B /* ImageViewerViewController.swift */,
+				EAA4FA412AC5BA64006BAB1B /* ImageViewerInteractor.swift */,
+				EAA4FA482AC5BAB3006BAB1B /* ImageViewer.storyboard */,
+			);
+			path = ImageViewer;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -177,6 +203,7 @@
 			files = (
 				EA4D82D72ABC50CD004D11BF /* LaunchScreen.storyboard in Resources */,
 				EA4D82D42ABC50CD004D11BF /* Assets.xcassets in Resources */,
+				EAA4FA492AC5BAB3006BAB1B /* ImageViewer.storyboard in Resources */,
 				EA4D82D22ABC50CD004D11BF /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -188,15 +215,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EAA4FA442AC5BA64006BAB1B /* ImageViewerRouter.swift in Sources */,
 				EA4D82E42ABC5699004D11BF /* WeatherService.swift in Sources */,
+				EAA4FA452AC5BA64006BAB1B /* ImageViewerViewController.swift in Sources */,
 				EA4D82EB2ABC5B13004D11BF /* WelcomeInteractor.swift in Sources */,
 				EA4D82E72ABC599E004D11BF /* WelcomePresenter.swift in Sources */,
+				EAA4FA432AC5BA64006BAB1B /* ImageViewerPresenter.swift in Sources */,
 				EA4D82CF2ABC50CD004D11BF /* ViewController.swift in Sources */,
 				EA4D82CB2ABC50CD004D11BF /* AppDelegate.swift in Sources */,
 				EA4D82ED2ABC5C53004D11BF /* WelcomeModuleBuilder.swift in Sources */,
 				EA4D82E92ABC5AB2004D11BF /* WelcomeRouter.swift in Sources */,
 				EA4D82CD2ABC50CD004D11BF /* SceneDelegate.swift in Sources */,
 				EA4D82E22ABC567D004D11BF /* DateService.swift in Sources */,
+				EAA4FA462AC5BA64006BAB1B /* ImageViewerInteractor.swift in Sources */,
+				EAA4FA422AC5BA64006BAB1B /* ImageViewerModuleBuilder.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
