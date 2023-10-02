@@ -61,6 +61,7 @@
                     </view>
                     <connections>
                         <outlet property="dateLabel" destination="Duz-xq-crx" id="1r8-t8-esP"/>
+                        <outlet property="showButton" destination="OcW-z2-uA0" id="PlL-fA-PZ3"/>
                         <outlet property="weatherLabel" destination="0fg-Lh-S5S" id="T1H-Ml-LfQ"/>
                     </connections>
                 </viewController>
