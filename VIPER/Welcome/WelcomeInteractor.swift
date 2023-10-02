@@ -22,7 +22,7 @@ class WelcomeInteractor: WelcomeInteractorProtocol {
     
     func loadDate() {
         dateService.getDate { [weak self] date in
-            self?.presenter?.didLoad(date: date.description)
+            self?.presenter?.didLoad(date: date?.description)
         }
     }
     
